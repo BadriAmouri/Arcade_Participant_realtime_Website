@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Cyberjunkies';
+  src: url('/public/fonts/Cyberjunkies.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OCR';
+  src: url('/public/fonts/OCRAEXT.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
