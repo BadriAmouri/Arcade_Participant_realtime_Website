@@ -86,7 +86,7 @@ const Games= () => {
       {/* Custom Arrows */}
       <button
         onClick={() => swiperRef.current?.slidePrev()}
-        className="  -translate-y-1/2 z-10 bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center shadow hover:bg-orange-600"
+        className="  -translate-y-1/2 z-10 bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center shadow hover:bg-orange-600 "
       >
         ←
       </button>

@@ -4,7 +4,7 @@ const TeamAccount = () => {
   return (
     <div >
         <Navbar/>
-        <div className="h-[90vh] flex  justify-center bg-home-bg bg-cover bg-center mt-20 sm:mt-0  ">
+        <div className="h-[90vh] flex  justify-center bg-home-bg bg-cover bg-center mt-[8rem] sm:mt-0  ">
             < div className='w-full  flex justify-center items-center gap-20 flex-col-reverse sm:flex-row  px-2'>
               <div className=' w-full flex-col p-2 gap-5'>
                 <div className=' flex w-full justify-around items-center '>
