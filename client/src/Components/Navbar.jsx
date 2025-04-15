@@ -25,9 +25,9 @@ const Navbar = () => {
         {/* Desktop Navigation Links */}
         <div className="hidden lg:flex lg:items-center lg:space-x-12">
           <NavLink href="/#">Ranking</NavLink>
-          <NavLink href="/#">Games</NavLink>
-          <NavLink href="/#">Q&A</NavLink>
-          <NavLink href="/#">Account</NavLink>
+          <NavLink href="/games">Games</NavLink>
+          <NavLink href="/gameDetails">Q&A</NavLink>
+          <NavLink href="/team">Account</NavLink>
         </div>
 
         {/* Mobile Menu Button */}
@@ -44,9 +44,9 @@ const Navbar = () => {
         <div className={`lg:hidden absolute top-20 right-2  shadow-lg dark:bg-dark-2 transition-all duration-300 ${open ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
           <div className="flex flex-col space-y-4 p-6">
           <NavLink href="/#">Ranking</NavLink>
-          <NavLink href="/#">Games</NavLink>
-          <NavLink href="/#">Q&A</NavLink>
-          <NavLink href="/#">Account</NavLink>
+          <NavLink href="/games">Games</NavLink>
+          <NavLink href="/gameDetails">Q&A</NavLink>
+          <NavLink href="/team">Account</NavLink>
           </div>
         </div>
       </div>

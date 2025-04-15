@@ -1,8 +1,9 @@
 // src/components/LoginSection.jsx
 
 import React from 'react';
-
+import { useNavigate } from 'react-router-dom';
 const LoginSection = () => {
+  const navigate = useNavigate();
   return (
     <div className="Login  flex flex-col items-center justify-center min-h-screen bg-white text-center px-4">
       <h1 className="text-4xl md:text-5xl font-bold font-cyber text-gray-800 mb-2">
@@ -32,7 +33,7 @@ const LoginSection = () => {
           />
         </div>
         <button
-          type="submit" className='btn font-Ocr' >
+          type="submit" className='btn  font-Ocr' onClick={() => navigate('/team')} >
           See more
         </button>
       </form>

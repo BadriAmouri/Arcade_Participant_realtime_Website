@@ -40,7 +40,7 @@ const Games= () => {
         <Navbar/>
         <div className='mt-20 '>
         <h1 className="text-4xl md:text-5xl font-bold font-cyber text-center text-gray-800 mb-2">ARCADE GAMES </h1>
-        <div className='mt-10 sm:pl-10  pl-10 '>
+        <div className='mt-10 sm:pl-10  px-2 '>
         <Swiper
       spaceBetween={50}
       slidesPerView={1} // default
@@ -79,7 +79,7 @@ const Games= () => {
         <div className=" min-h-screen py-10 px-4 flex flex-col  items-center">
       <h1 className="text-4xl font-bold text-white mb-10">AGENDA</h1>
 
-     <div className='sm:mt-20'>
+     <div className='sm:mt-20 overflow-hidden w-full'>
      
 
      <div className="w-full   flex justify-center items-center gap-4"> 
@@ -131,7 +131,7 @@ const Games= () => {
 
       <button
         onClick={() => swiperRef.current?.slideNext()}
-        className="-translate-y-1/2 z-10 bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center shadow hover:bg-orange-600"
+        className="-translate-y-1/2 z-10 bg-orange-500 text-white rounded-full w-10 h-10  items-center justify-center shadow hover:bg-orange-600 hidden sm:flex"
       >
         →
       </button>
