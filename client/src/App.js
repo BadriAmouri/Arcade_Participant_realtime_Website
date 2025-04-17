@@ -6,6 +6,7 @@ import LoginSection from './Pages/login';
 import TeamAccount from './Pages/TeamAccount';
 import Games from './Pages/Games';
 import GameDetails from './Pages/GameDetails';
+import TeamRanking from './Components/TeamRanking';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         <Route path="/team" element={<TeamAccount />} />
         <Route path="/games" element={<Games />} />
         <Route path='/gameDetails' element={<GameDetails/>}    />
+        <Route path='/TeamRanking' element={<TeamRanking/>}    />
+        
       </Routes>
     </Router>
   );

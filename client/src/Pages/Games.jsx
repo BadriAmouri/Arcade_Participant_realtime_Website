@@ -35,6 +35,78 @@ const Games= () => {
       ];
 
       const swiperRef = useRef(null);
+      // what needs to be added : location , bigDescription , points system , number of members required
+      const games_Details = [
+        {
+          title: "Void Floor Protocol",
+          description: "The floor isn’t lava — it’s an unstable plasma field from a dying star",
+          time: "11:30 - 12:30 (Main courtyard)",
+          Image : "/images/lava.png",
+        },
+        {
+          title: "WarpZone Arcade Clash (FIFA)",
+          description: "Across the galaxy, ancient civilizations left behind their own versions of entertainment — and now, it’s your turn to face them",
+          time: "11:30 - 12:30 (Lab room)",
+          Image : "/images/fifa.png",
+
+        },
+        {
+          title: "Chess: Battle for the Cosmic Throne",
+          description: "In a distant corner of the universe, where ancient civilizations wage wars of strategy and intellect, Galactic Chess stands as the ultimate test of mental mastery",
+          time: "16:30 - 17:15 (Amphitheatre)",
+          Image : "/images/chess.png",
+        },
+        {
+          title: "Family Feud: Battle of Minds",
+          description: "Across galaxies, civilizations settle their rivalries not with lasers or fleets — but through the legendary contest known as Team Feud.",
+          time: "10:30 - 11:30 (Tuto room)",
+          Image : "/images/teamFued.png",
+
+        },
+        {
+          title: "The Nebula Maze",
+          description: "Deep within the misty expanse of the Nebula Zone lies an ancient alien maze known to trap travelers for eternity.",
+          time: "11:30 - 12:00 (Tuto room)",
+          Image : "/images/maze.png",
+
+        },
+        {
+          title: "Pyramid Protocol",
+          description: "Before Earth’s pyramids marked the sands, star-faring civilizations left behind colossal monuments scattered across galaxies.",
+          time: "11:00 - 11:30 (Tuto room)",
+          Image : "/images/pyramid.png",
+
+        },
+        {
+          title: "Beam It: The Meme Transmission",
+          description: "Even the galaxy’s most serious warlords need a laugh.",
+          time: "14:30 - 15:30 (Amphitheatre)",
+          Image : "/images/memeIt.png",
+
+        },
+        {
+          title: "/images/balance.png",
+          description: "In the Zero-Gravity Balance Trials, your team must maintain perfect control across floating platforms, unstable alien structures, and unpredictable gravity fields.",
+          time: "15:30 - 16:30 (Amphitheatre)",
+          Image : "/images/lava.png",
+
+        },
+        {
+          title: "Starship Escape Nexus (Escape Room)",
+          description: "You awaken trapped aboard an abandoned alien vessel hurtling through hyperspace. ",
+          time: "13:30 - 14:30 (Tuto room)",
+          Image : "/images/escape_room.png",
+
+        },
+        {
+          title: "Quantum Math Trials",
+          description: "In the void of deep space, numbers aren’t just numbers — they’re ancient codes that hold the secrets of the galaxy. ",
+          time: "10:30 - 11:30 (Tuto room)",
+          Image : "/images/math.png",
+
+        }
+      ];
+      
   return (
     <div>
         <Navbar/>
@@ -58,18 +130,17 @@ const Games= () => {
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide><GameCard/></SwiperSlide>
-      <SwiperSlide><GameCard/></SwiperSlide>
-      <SwiperSlide><GameCard/></SwiperSlide>
-      <SwiperSlide><GameCard/></SwiperSlide>
-      <SwiperSlide><GameCard/></SwiperSlide>
-      <SwiperSlide><GameCard/></SwiperSlide>
-      <SwiperSlide><GameCard/></SwiperSlide>
-      <SwiperSlide><GameCard/></SwiperSlide>
-      <SwiperSlide><GameCard/></SwiperSlide>
-      <SwiperSlide><GameCard/></SwiperSlide>
-      <SwiperSlide><GameCard/></SwiperSlide>
-      <SwiperSlide><GameCard/></SwiperSlide>
+      {games_Details.map((game, index) => (
+        <SwiperSlide>
+  <GameCard
+    key={index}
+    title={game.title}
+    description={game.description}
+    time={game.time}
+    image={game.Image}
+  />
+  </SwiperSlide>
+))}
       
     </Swiper>
         </div>

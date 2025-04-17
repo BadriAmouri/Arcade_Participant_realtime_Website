@@ -4,27 +4,28 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-blue-300">
+    <div className="">
       <div className="flex items-center justify-around px-4 py-5">
         {/* Logo */}
         <div className="w-60">
           <a href="/#">
             <img
-              src="/images/Logo.png"
+              src="/images/Layer 1.png"
               alt="logo"
-              className="dark:hidden"
+              className="dark:hidden w-[200px]"
             />
+            
             <img
-              src="/images/Logo.png"
+              src="/images/Layer 1.png"
               alt="logo"
-              className="hidden dark:block"
+              className="hidden dark:block  w-[200px]"
             />
           </a>
         </div>
 
         {/* Desktop Navigation Links */}
         <div className="hidden lg:flex lg:items-center lg:space-x-12">
-          <NavLink href="/#">Ranking</NavLink>
+          <NavLink href="/TeamRanking">Ranking</NavLink>
           <NavLink href="/games">Games</NavLink>
           <NavLink href="/gameDetails">Q&A</NavLink>
           <NavLink href="/team">Account</NavLink>
@@ -43,7 +44,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div className={`lg:hidden absolute top-20 right-2  shadow-lg dark:bg-dark-2 transition-all duration-300 ${open ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
           <div className="flex flex-col space-y-4 p-6">
-          <NavLink href="/#">Ranking</NavLink>
+          <NavLink href="/TeamRanking">Ranking</NavLink>
           <NavLink href="/games">Games</NavLink>
           <NavLink href="/gameDetails">Q&A</NavLink>
           <NavLink href="/team">Account</NavLink>

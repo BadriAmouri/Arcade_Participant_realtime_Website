@@ -1,11 +1,15 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
+import { useLocation } from 'react-router-dom';
 
 const GameDetails = () => {
+  const { state: { title, time, description } } = useLocation();
+
+
   return (
     <div>
         <Navbar/>
-        <h1 className="text-4xl md:text-7xl font-bold font-cyber text-center text-gray-800 mt-20">Game Name </h1>
+        <h1 className="text-4xl md:text-7xl font-bold font-cyber text-center text-gray-800 mt-20">{title} </h1>
     <div className="flex flex-col lg:flex-row items-center   min-h-screen p-6 lg:p-12 gap-8">
       {/* Image Section */}
       <div className="w-full lg:w-1/2">
@@ -22,13 +26,10 @@ const GameDetails = () => {
           description :
         </h2>
         <p className="text-gray-400 text-sm md:text-base font-Ocr">• Ground + 1st floors – labs</p>
-        <p className="text-orange-400  text-sm md:text-base font-Ocr">10:30 – 17:30</p>
+        <p className="text-orange-400  text-sm md:text-base font-Ocr">{time}</p>
 
-        <p className="text-[#707070] text-sm md:text-base leading-relaxed">
-          A strange signal has been detected. Ancient relics, encrypted messages, and otherworldly
-          puzzles await those brave enough to answer the call. Arcade’s Alien Treasure Hunt isn’t
-          your average quest – it’s a race against time to uncover a hidden artifact left behind by
-          an unknown extraterrestrial civilization.
+        <p className="text-[#707070] text-sm md:text-base leading-relaxed font-Ocr ">
+         {description}
         </p>
         <p className=" font-Ocr text-sm md:text-base leading-relaxed text-[#707070]">
           Teams must decipher alien transmissions, decode cryptic symbols, and navigate a series of
