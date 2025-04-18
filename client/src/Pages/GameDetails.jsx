@@ -2,8 +2,8 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import { useLocation } from 'react-router-dom';
 
-const GameDetails = () => {
-  const { state: { title, time, description } } = useLocation();
+const GameDetails = () => { 
+  const { state: { title, time, description ,image ,GameDescription , TeamNumber} } = useLocation();
 
 
   return (
@@ -14,7 +14,7 @@ const GameDetails = () => {
       {/* Image Section */}
       <div className="w-full lg:w-1/2">
         <img
-          src='/images/Intersect.png'
+          src={image}
           alt="Treasure Hunt Map"
           className="w-full h-auto object-cover rounded-xl shadow-lg"
         />
@@ -29,20 +29,11 @@ const GameDetails = () => {
         <p className="text-orange-400  text-sm md:text-base font-Ocr">{time}</p>
 
         <p className="text-[#707070] text-sm md:text-base leading-relaxed font-Ocr ">
-         {description}
+         {GameDescription}
         </p>
-        <p className=" font-Ocr text-sm md:text-base leading-relaxed text-[#707070]">
-          Teams must decipher alien transmissions, decode cryptic symbols, and navigate a series of
-          mind-bending tasks scattered across secret locations. This year’s hunt merges the thrill
-          of adventure with electronics-based challenges – assembling circuits, activating devices,
-          and unlocking alien tech powered by Arduino and human ingenuity.
-        </p>
-        <p className="font-Ocr text-sm md:text-base leading-relaxed text-[#707070]">
-          Only the sharpest minds and boldest explorers will piece together the final coordinates
-          and claim the artifact before it vanishes into the void once more. <br />
-          <span className="font-semibold">Are you ready to answer the signal?</span>
-        </p>
-        <p className="text-black text-sm md:text-base font-Ocr">• All team members</p>
+       
+        
+        <p className="text-black text-sm md:text-base font-Ocr">Required :  {TeamNumber}</p>
       </div>
     </div>
      {/* ADD THE TEAMS DETAILS  */}

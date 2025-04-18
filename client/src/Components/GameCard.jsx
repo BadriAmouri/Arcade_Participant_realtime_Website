@@ -1,15 +1,16 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const GameCard = ({title, description , time,image}) => {
+const GameCard = ({title, description , time,image ,GameDescription , TeamNumber}) => {
   const navigate = useNavigate();
   const handleClick = () => {
     navigate('/gameDetails', { 
       state: {
         title: title,
         time: time,
-        description: description,
         image: image,
+        GameDescription: GameDescription,
+        TeamNumber: TeamNumber
 
       }
      }); // sending the whole object

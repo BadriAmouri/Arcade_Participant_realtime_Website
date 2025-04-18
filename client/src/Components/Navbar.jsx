@@ -27,7 +27,6 @@ const Navbar = () => {
         <div className="hidden lg:flex lg:items-center lg:space-x-12">
           <NavLink href="/TeamRanking">Ranking</NavLink>
           <NavLink href="/games">Games</NavLink>
-          <NavLink href="/gameDetails">Q&A</NavLink>
           <NavLink href="/team">Account</NavLink>
         </div>
 
@@ -46,7 +45,6 @@ const Navbar = () => {
           <div className="flex flex-col space-y-4 p-6">
           <NavLink href="/TeamRanking">Ranking</NavLink>
           <NavLink href="/games">Games</NavLink>
-          <NavLink href="/gameDetails">Q&A</NavLink>
           <NavLink href="/team">Account</NavLink>
           </div>
         </div>
