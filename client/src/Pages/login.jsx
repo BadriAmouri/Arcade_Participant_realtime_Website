@@ -32,7 +32,7 @@ const LoginSection = () => {
     'SOPAPA': '4',
     'Team Cheese': '5',
     'Area_51': '6',
-    'واه نيشان': 'Y7',
+    'واه نيشان': '7',
     'Aliens': '8',
     'Ganadores': '9',
     'نادي مطوري غوغل': '10',
